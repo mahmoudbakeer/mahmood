@@ -1,0 +1,96 @@
+html
+<!DOCTYPE html>
+<html>
+ <head>
+ <meta charset="UTF-8">
+ <title>My Cool Web Page</title>
+ <style>
+ body {
+ font-family: Arial, sans-serif;
+ margin: 0;
+ padding: 0;
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ grid-template-rows: 100px 1fr;
+ grid-template-areas: 
+  "header header header"
+ "main main sidebar"
+ "footer footer footer";
+ height: 100vh;
+ }
+ 
+ header {
+     grid-area: header;
+ background-color: #34495e;
+ color: #fff;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 0 20px;
+ font-size: 24px;
+ box-shadow: 0 4px 2px -2px rgba(0,0,0,0.2);
+ }
+ 
+ nav {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ }
+ 
+ nav a {
+ color: #fff;
+ text-decoration: none;
+ margin-left: 20px;
+ transition: color 0.2s ease-in-out;
+ }
+ 
+ nav a:hover {
+ color: #c0392b;
+ }
+ 
+ main {
+ grid-area: main;
+ background-color: #fff;
+ padding: 40px;
+ box-shadow: 0 4px 2px -2px rgba(0,0,0,0.2);
+ }
+ 
+ aside {
+ grid-area: sidebar;
+ background-color: #7f8c8d;
+ color: #fff;
+ padding: 20px;
+ font-size: 18px;
+}
+ 
+ footer {
+ grid-area: footer;
+ background-color: #34495e;
+ color: #fff;
+ padding: 20px;
+ box-shadow: 0 -4px 2px -2px rgba(0,0,0,0.2);
+ }
+ </style>
+ </head>
+ <body>
+ <header>
+ <h1>My Cool Web Page</h1>
+ <nav>
+ <a href="#">Home</a>
+ <a href="#">About</a>
+ <a href="#">Contact</a>
+ </nav>
+ </header>
+ <main>
+ <h2>Welcome to my page</h2>
+ <p>This is some sample text for the main content area. It can be replaced with anything you like.</p>
+ </main>
+ <aside>
+ <h3>Sidebar</h3>
+ <p>This is the sidebar. It can contain extra information or links related to the content on the page.</p>
+ </aside>
+ <footer>
+ <p>&copy; My Cool Web Page 2021</p>
+ </footer>
+ </body>
+</html
